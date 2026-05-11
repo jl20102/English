@@ -6,7 +6,8 @@ import {
   ImageBackground,
   TouchableOpacity,
   ScrollView,
-  Dimensions,
+  Platform,
+  useWindowDimensions,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
@@ -14,8 +15,12 @@ import { BlurView } from "expo-blur";
 import { Ionicons, MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
-const { width } = Dimensions.get("window");
-const ICON_SIZE = (width - 96) / 4;
+// On wide web (phone frame mode), clamp width to phone width so icons size correctly
+function usePhoneWidth() {
+  const { width } = useWindowDimensions();
+  if (Platform.OS === "web" && width >= 700) return 390;
+  return width;
+}
 
 const WALLPAPER =
   "https://images.unsplash.com/photo-1763667109206-8c221106a682?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxkYXJrJTIwZW5jaGFudGVkJTIwZm9yZXN0JTIwbW9vbnxlbnwwfHx8fDE3Nzg1MTcyNDR8MA&ixlib=rb-4.1.0&q=85";
@@ -112,14 +117,14 @@ const DOCK_APPS: AppDef[] = [
   },
 ];
 
-function AppIcon({ app, size = ICON_SIZE }: { app: AppDef; size?: number }) {
+function AppIcon({ app, size }: { app: AppDef; size: number }) {
   const router = useRouter();
   const onPress = () => {
     if (app.route) router.push(app.route as any);
   };
   return (
     <TouchableOpacity
-      style={styles.appWrap}
+      style={[styles.appWrap, { width: size }]}
       onPress={onPress}
       activeOpacity={0.7}
       testID={`app-icon-${app.id}`}
@@ -145,6 +150,8 @@ function AppIcon({ app, size = ICON_SIZE }: { app: AppDef; size?: number }) {
 export default function Home() {
   const router = useRouter();
   const [now, setNow] = useState(new Date());
+  const phoneW = usePhoneWidth();
+  const iconSize = (phoneW - 96) / 4;
   useEffect(() => {
     const t = setInterval(() => setNow(new Date()), 30000);
     return () => clearInterval(t);
@@ -200,7 +207,7 @@ export default function Home() {
           {/* App grid */}
           <View style={styles.grid}>
             {APPS.map((app) => (
-              <AppIcon key={app.id} app={app} />
+              <AppIcon key={app.id} app={app} size={iconSize} />
             ))}
           </View>
 
@@ -320,7 +327,7 @@ const styles = StyleSheet.create({
     rowGap: 22,
     justifyContent: "space-between",
   },
-  appWrap: { width: ICON_SIZE, alignItems: "center" },
+  appWrap: { alignItems: "center" },
   appIcon: {
     alignItems: "center",
     justifyContent: "center",
