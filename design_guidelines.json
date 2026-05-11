@@ -1,0 +1,167 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury) - Modified for Mystical Forest",
+  "brand": {
+    "name": "Puck OS - Midsummer's Eve",
+    "vibe": "Whimsical fairy-tale forest at night. Luminous, mischievous, trickster, dark-magical. Apple designed for fairies."
+  },
+  "colors": {
+    "background": {
+      "primary": "#05050A",
+      "secondary": "#0D0E1A",
+      "tertiary": "#151726"
+    },
+    "text": {
+      "primary": "#F4F4F6",
+      "secondary": "#A1A4BA",
+      "accent": "#FFD700",
+      "inverse": "#05050A"
+    },
+    "accents": {
+      "gold": "#FFC107",
+      "emerald": "#00E676",
+      "lavender": "#B388FF",
+      "indigo": "#3949AB"
+    },
+    "gradients": {
+      "spotify_bg": ["#1A1226", "#05050A"],
+      "tinder_match": ["#FFC107", "#FF5252"],
+      "icon_music": ["#3949AB", "#B388FF"],
+      "icon_dating": ["#FF5252", "#FF4081"],
+      "icon_notes": ["#FFC107", "#FFA000"],
+      "icon_weather": ["#00E676", "#00B0FF"]
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "PlayfairDisplay_600SemiBold",
+      "body": "Outfit_400Regular"
+    },
+    "sizes": {
+      "xs": 12,
+      "sm": 14,
+      "base": 16,
+      "lg": 20,
+      "xl": 24,
+      "2xl": 32,
+      "3xl": 40
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 48
+  },
+  "components": {
+    "blur_view": {
+      "tint": "dark",
+      "intensity": 60,
+      "style": "overflow-hidden, border-radius (24), border-width (1), border-color (rgba(255,255,255,0.1))"
+    },
+    "app_icon": {
+      "size": 64,
+      "radius": 16,
+      "shadow": "color (#000), offset (0, 4), opacity (0.3), radius (8)"
+    },
+    "widget": {
+      "radius": 24,
+      "padding": 16,
+      "bg": "rgba(255,255,255,0.05)"
+    },
+    "screen_container": {
+      "flex": 1,
+      "bg": "transparent"
+    }
+  },
+  "content_strategy": {
+    "spotify": {
+      "playlist_name": "Midsummer Mischief",
+      "songs": [
+        { "title": "I Put a Spell on You", "artist": "The Fairies", "duration": "3:33" },
+        { "title": "Fools (These Mortals Be)", "artist": "Robin & The Goodfellows", "duration": "2:45" },
+        { "title": "Midnight City", "artist": "M83", "duration": "4:01" },
+        { "title": "Sympathy for the Devil", "artist": "The Rolling Stones", "duration": "6:18" }
+      ]
+    },
+    "dating_app": {
+      "name": "Spark",
+      "puck_profile": {
+        "name": "Robin Goodfellow",
+        "age": "Ageless",
+        "location": "Athenian Woods, 0.5 miles away",
+        "bio": "Swipe right if you enjoy chaos, love potions, and getting lost in the woods. I'm Oberon's right-hand man, but I follow my own rules. Looking for someone who doesn't mind a little trickery. No mortals, please (you're all fools anyway).",
+        "interests": ["Shape-shifting", "Practical Jokes", "Night Flights", "Botany (Love Juice)"]
+      },
+      "matches": [
+        {
+          "name": "Titania",
+          "match_percentage": "99% Match",
+          "image": "https://images.pexels.com/photos/7244094/pexels-photo-7244094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        },
+        {
+          "name": "Helena",
+          "match_percentage": "12% Match",
+          "image": "https://images.unsplash.com/photo-1738276569587-f77e2cf58940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwZWxmJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc4NTE3MjUxfDA&ixlib=rb-4.1.0&q=85"
+        }
+      ]
+    },
+    "home_screen": {
+      "quotes_widget": "Lord, what fools these mortals be!"
+    }
+  },
+  "screens": {
+    "Home": {
+      "layout": "Vertical. Top: Status bar & Date widget. Middle: Quotes Widget. Bottom: App Grid (4x2) & Dock (Glassmorphism).",
+      "elements": [
+        "BackgroundImage (Mystical Forest)",
+        "Date/Time Widget (Playfair Display, large, white with soft shadow)",
+        "Quote Widget ('Lord, what fools these mortals be!', glassmorphic)",
+        "App Grid (Spotify, Dating, Notes, Messages)",
+        "Dock (BlurView at bottom holding 4 pinned apps)"
+      ]
+    },
+    "Spotify": {
+      "layout": "Vertical, top-heavy album art, list below.",
+      "elements": [
+        "LinearGradient Background (dark purple to black)",
+        "Header (transparent back button, 'Puck\\'s Mischief Mix')",
+        "Large Album Art (Glowing Magical Plants image, large shadow, rounded corners)",
+        "Song Title ('I Put a Spell on You' etc) - Large Playfair text",
+        "Playback Controls (Shuffle, Previous, Play (large gold), Next, Repeat)",
+        "Song List (3-4 songs, smaller text, aligned left)"
+      ]
+    },
+    "Dating": {
+      "layout": "Full screen card swipe layout.",
+      "elements": [
+        "Dark Background",
+        "Header ('Spark' - dating app name, fire icon)",
+        "Main Card: Large Image of Puck, rounded corners (24px).",
+        "Card Overlay: BlurView at bottom of image.",
+        "Overlay Content: 'Robin Goodfellow (Puck), Ageless', 'Athenian Woods', Bio (from content strategy), Tags (from content strategy)",
+        "Action Buttons (Circle buttons: X (red), Star (blue), Heart (emerald/gold))"
+      ]
+    }
+  },
+  "image_urls": {
+    "home_wallpaper": "https://images.unsplash.com/photo-1763667109206-8c221106a682?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxkYXJrJTIwZW5jaGFudGVkJTIwZm9yZXN0JTIwbW9vbnxlbnwwfHx8fDE3Nzg1MTcyNDR8MA&ixlib=rb-4.1.0&q=85",
+    "puck_avatar": "https://images.unsplash.com/photo-1745957014356-a1e867ea303b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwZWxmJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc4NTE3MjUxfDA&ixlib=rb-4.1.0&q=85",
+    "titania_avatar": "https://images.pexels.com/photos/7244094/pexels-photo-7244094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "helena_avatar": "https://images.unsplash.com/photo-1738276569587-f77e2cf58940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwZWxmJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc4NTE3MjUxfDA&ixlib=rb-4.1.0&q=85",
+    "spotify_album_art": "https://images.unsplash.com/photo-1751891237516-bc0368fd9842?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxnbG93aW5nJTIwbWFnaWNhbCUyMHBsYW50cyUyMG5pZ2h0fGVufDB8fHx8MTc3ODUxNzI1MXww&ixlib=rb-4.1.0&q=85",
+    "spotify_album_art_alt": "https://images.unsplash.com/photo-1775416987763-d2c4f47af443?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxnbG93aW5nJTIwbWFnaWNhbCUyMHBsYW50cyUyMG5pZ2h0fGVufDB8fHx8MTc3ODUxNzI1MXww&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Use expo-blur (BlurView) for the Home Screen dock, dating app text overlays, and quotes widget to give it a premium 'Apple for fairies' Glassmorphism feel.",
+    "Use expo-linear-gradient for app icons and gradient backgrounds (e.g. Spotify background).",
+    "Use @expo/vector-icons (Ionicons or MaterialCommunityIcons) for all icons (music, heart, flame, etc). Do not use standard text emojis.",
+    "Ensure all interactive elements (buttons, app icons) have a data-testid attribute for testing purposes.",
+    "Use @expo-google-fonts/playfair-display (headings) and @expo-google-fonts/outfit (body).",
+    "On the Home Screen, ensure the background image (home_wallpaper) is set to 'absolute' fill, and apps/widgets render on top of it.",
+    "For the Dating App, the image (puck_avatar) should take up the majority of the screen inside a rounded card, with a BlurView overlay at the bottom for his name, age, and bio.",
+    "Ensure smooth mock navigation. Use conditional rendering or a simple state switcher to swap between Home, Spotify, and Dating screens to simulate opening/closing apps."
+  ]
+}
