@@ -67,24 +67,28 @@ const APPS: AppDef[] = [
     label: "Camera",
     icon: <Ionicons name="camera" size={30} color="#fff" />,
     gradient: ["#151726", "#3949AB"],
+    route: "/camera",
   },
   {
     id: "weather",
     label: "Weather",
     icon: <MaterialCommunityIcons name="weather-night" size={32} color="#fff" />,
     gradient: ["#1A1226", "#3949AB"],
+    route: "/weather",
   },
   {
     id: "calendar",
     label: "Calendar",
     icon: <Ionicons name="calendar" size={30} color="#fff" />,
     gradient: ["#FF5252", "#FFC107"],
+    route: "/calendar",
   },
   {
     id: "potions",
     label: "Potions",
     icon: <MaterialCommunityIcons name="flask" size={32} color="#fff" />,
     gradient: ["#B388FF", "#FF4081"],
+    route: "/potions",
   },
 ];
 
