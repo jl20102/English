@@ -98,6 +98,7 @@ const DOCK_APPS: AppDef[] = [
     label: "Phone",
     icon: <Ionicons name="call" size={28} color="#fff" />,
     gradient: ["#00E676", "#00B0FF"],
+    route: "/phone",
   },
   {
     id: "dock-spark",
@@ -115,9 +116,10 @@ const DOCK_APPS: AppDef[] = [
   },
   {
     id: "dock-safari",
-    label: "Web",
+    label: "Compass",
     icon: <FontAwesome5 name="compass" size={26} color="#fff" />,
     gradient: ["#FFC107", "#FF5252"],
+    route: "/compass",
   },
 ];
 
