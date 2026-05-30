@@ -188,13 +188,6 @@ export default function Essays() {
               <Text style={styles.body}>{MESSAGES_ESSAY}</Text>
             </View>
           )}
-
-          <View style={styles.footerCard}>
-            <Ionicons name="checkmark-circle" size={16} color="#00E676" />
-            <Text style={styles.footerText}>
-              Every section uses textual evidence (act/scene/line references) from A Midsummer Night&apos;s Dream.
-            </Text>
-          </View>
         </ScrollView>
       </SafeAreaView>
     </View>
