@@ -90,6 +90,13 @@ const APPS: AppDef[] = [
     gradient: ["#B388FF", "#FF4081"],
     route: "/potions",
   },
+  {
+    id: "essays",
+    label: "Essays",
+    icon: <MaterialCommunityIcons name="book-open-variant" size={30} color="#fff" />,
+    gradient: ["#FFD700", "#FFA000"],
+    route: "/essays",
+  },
 ];
 
 const DOCK_APPS: AppDef[] = [
