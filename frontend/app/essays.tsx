@@ -13,91 +13,80 @@ const SONGS: Section[] = [
     title: "I Put a Spell on You",
     subtitle: "Screamin' Jay Hawkins · 5–7 sentence analysis",
     body:
-      "This song is about putting a love spell on someone, which is exactly what Puck does in the play. " +
-      "In Act 2 Scene 2, Oberon gives him the love-in-idleness flower and tells him to place it on people's eyes so they fall in love with whoever they see first. " +
-      "The lyric \"I put a spell on you, because you're mine\" sounds controlling, and that fits Puck because he forces people to feel love they did not choose. " +
-      "Hawkins also sings the song in a dramatic way, and Puck enjoys showing off his magic in a similar manner. " +
-      "The song treats love as something that can be forced, which matches the entire love-juice storyline in the play. " +
-      "If Puck made a playlist, this song would likely be the first track.",
+      "This song focuses on placing a love spell on someone, which directly parallels Puck's actions in the play. " +
+      "In Act 2, Scene 2, Oberon gives Puck the love-in-idleness flower and instructs him to place it on the sleepers' eyes so they fall in love with the first person they see. " +
+      "The lyric \"I put a spell on you, because you're mine\" possesses a controlling tone, which fits Puck because he forces the characters to experience a love they did not choose. " +
+      "Furthermore, Hawkins delivers a highly dramatic vocal performance, mirroring the way Puck enjoys showing off his magic. " +
+      "Ultimately, the song treats love as something that can be forced, which matches the central love-juice plot of the play.",
   },
   {
     id: "song2",
     title: "Sympathy for the Devil",
     subtitle: "The Rolling Stones · 5–7 sentence analysis",
     body:
-      "Mick Jagger sings as a trickster who has existed for centuries and quietly caused chaos throughout history. " +
-      "That description fits Puck, who says \"I am that merry wanderer of the night\" in Act 2 Scene 1 and boasts about frightening milkmaids and tripping old women. " +
-      "The lyric \"pleased to meet you, hope you guess my name\" connects to Puck because he has many different names. " +
-      "The fairy in 2.1 lists them: Robin Goodfellow, Hobgoblin, and sweet Puck. " +
-      "Both the narrator of the song and Puck cause problems, yet people still find them charming. " +
-      "The song also has a calm, steady rhythm, which matches how Puck never panics when something goes wrong. He simply moves on to the next task.",
+      "Mick Jagger sings from the perspective of a trickster who has existed for centuries and caused chaos throughout history. " +
+      "This description strongly connects to Puck, who declares, \"I am that merry wanderer of the night\" in Act 2, Scene 1, and boasts about frightening milkmaids and tripping elderly women. " +
+      "Additionally, the lyric \"pleased to meet you, hope you guess my name\" matches Puck because he operates under multiple identities. " +
+      "As the fairy in Act 2, Scene 1 notes, he is known as Robin Goodfellow, Hobgoblin, and sweet Puck. " +
+      "While both the song's narrator and Puck cause constant trouble, audiences still find both characters charming.",
   },
   {
     id: "song3",
     title: "Midnight City",
     subtitle: "M83 · 5–7 sentence analysis",
     body:
-      "Puck completes all of his work at night, so a song called \"Midnight City\" already matches his character. " +
-      "In Act 3 Scene 2 he tells Oberon \"this must be done with haste, for night's swift dragons cut the clouds full fast\" because they must finish before sunrise. " +
-      "M83's song is dark and electronic, and it sounds like a magical forest after dark. " +
-      "The song has very few lyrics and is mostly atmosphere, which works for Puck because he moves so quickly that he is hard to see. " +
-      "The saxophone solo at the end sounds like a fairy darting between trees. " +
-      "The song is about being awake while everyone else is asleep, which describes Puck's job perfectly.",
+      "Because Puck completes all of his mischievous work at night, a song titled \"Midnight City\" matches his character perfectly. " +
+      "In Act 3, Scene 2, he warns Oberon, \"this must be done with haste, for night's swift dragons cut the clouds full fast,\" emphasizing that their magic must be finished before sunrise. " +
+      "M83's track is dark and electronic, successfully evoking the atmosphere of a magical forest after dark. " +
+      "Because the song relies on musical atmosphere rather than lyrics, it reflects Puck's incredible speed and the way he moves too quickly to be seen. " +
+      "Even the energetic saxophone solo at the end sounds like a fairy darting between trees, celebrating a character who is awake while the rest of the world sleeps.",
   },
   {
     id: "song4",
     title: "Bad Guy",
     subtitle: "Billie Eilish · 5–7 sentence analysis",
     body:
-      "Billie Eilish whispers \"I'm the bad guy\" in a sarcastic way, and Puck is a similar type of self-aware troublemaker. " +
-      "In Act 3 Scene 2, after he places the love juice on the wrong Athenian and causes chaos, he does not apologize. " +
-      "Instead he says \"Lord, what fools these mortals be!\" " +
-      "The song sounds slightly threatening but also playful, which matches Puck because he frightens people without truly harming them. " +
-      "The fairy in Act 2 Scene 1 says he \"misleads night-wanderers, laughing at their harm.\" " +
-      "Both Eilish and Puck understand that the audience secretly enjoys the troublemaker more than the well-behaved characters.",
+      "Billie Eilish delivers the lyric \"I'm the bad guy\" with a sarcastic demeanor, establishing herself as the same type of self-aware troublemaker that Puck is. " +
+      "In Act 3, Scene 2, after Puck mistakenly applies the love juice to the wrong Athenian and causes mass chaos, he refuses to apologize. " +
+      "Instead, he mockingly observes, \"Lord, what fools these mortals be!\" " +
+      "The song's instrumentation sounds slightly threatening yet playful, which matches Puck's ability to frighten humans without causing them actual harm. " +
+      "As the fairy points out in Act 2, Scene 1, Puck willingly \"misleads night-wanderers, laughing at their harm.\" " +
+      "Both Eilish and Puck understand that audiences frequently prefer the troublemaker over the well-behaved characters.",
   },
   {
     id: "song5",
     title: "A Little Less Conversation",
     subtitle: "Elvis Presley · 5–7 sentence analysis",
     body:
-      "Elvis demands \"a little more action\" and less talking, which describes how Puck feels about Oberon. " +
-      "Oberon delivers long speeches, such as the \"I know a bank where the wild thyme blows\" speech in Act 2 Scene 1, which lasts over twenty lines. " +
-      "Puck's lines are shorter and focused on action, such as \"I'll put a girdle round about the earth in forty minutes\" or \"I go, I go; look how I go.\" " +
-      "The fast tempo of the song also matches how quickly events spiral once Puck becomes involved. " +
-      "In a single night he turns a man's head into a donkey's, mixes up all four lovers, and breaks up the Fairy Queen's marriage. " +
-      "\"A little less conversation\" describes Puck's entire attitude.",
+      "Elvis Presley's demand for \"a little more action\" and less talking perfectly describes how Puck views the other characters. " +
+      "While Oberon delivers lengthy monologues, such as his twenty-line speech in Act 2, Scene 1 that begins \"I know a bank where the wild thyme blows,\" Puck prefers brief, action-oriented dialogue. " +
+      "This is evident when Puck declares, \"I'll put a girdle round about the earth in forty minutes,\" or when he eagerly states, \"I go, I go; look how I go.\" " +
+      "The fast tempo of the song also mirrors how quickly events spiral out of control once Puck becomes involved. " +
+      "In a single night, he transforms a man's head into a donkey's and disrupts the relationships of the four lovers, proving that Presley's lyrics capture Puck's energetic attitude.",
   },
 ];
 
 const PROFILE_ESSAY =
-  "I built Puck's dating profile around three main traits that appear throughout the play. " +
-  "He loves mischief, he works for Oberon, and he believes mortals are foolish. " +
-  "His bio calls him a hobgoblin because in Act 2 Scene 1 a fairy actually identifies him by saying \"those that Hobgoblin call you, and sweet Puck.\" " +
-  "The bio mentions running errands, making love potions, and switching heads because those are exactly the tasks he performs in the play. " +
-  "He fetches the love-juice flower in 2.1, places it on the lovers' eyes in 2.2, and transforms Bottom's head into a donkey's head in 3.1. " +
-  "The \"go around the whole world in forty minutes\" line is nearly a direct quote from his boast \"I'll put a girdle round about the earth in forty minutes.\" " +
-  "His interests, such as Shape-shifting and Practical Jokes, are based on real moments in the play. " +
-  "He turns himself into a stool to trick an old woman in 2.1, and he speaks in poetry throughout the entire play. " +
-  "I made him \"looking for someone who can keep up\" because Puck values speed and wit, and Oberon depends on him for important tasks. " +
-  "For his matches, I chose Titania first because their match percentage is ironically high. " +
-  "Puck ruined her marriage by making her fall in love with a donkey, yet they are both fairies, so they share a similar world. " +
-  "I added a red flag noting that she is married to Puck's boss, because that detail is important. " +
-  "Helena has a much lower match because Puck only knows her as someone he accidentally caused trouble for in 3.2. " +
-  "Including both a fairy match and a mortal match shows that Puck moves between two worlds, which is his role throughout the play. " +
-  "I wrote the profile in his sarcastic voice because Puck is the one character who speaks directly to the audience at the end of the play, saying \"if we shadows have offended.\" " +
-  "Shakespeare writes him as funny but somewhat harsh, which is the same tone I used.";
+  "I created Puck's dating profile based on three main traits from the play: his love of mischief, his loyalty to Oberon, and his belief that mortals are foolish. " +
+  "His bio refers to him as a hobgoblin because a fairy uses that exact name for him in Act 2, Scene 1. " +
+  "The bio also mentions running errands, making love potions, and changing heads, which are all tasks he performs in the play. " +
+  "For instance, he fetches the magic flower in Act 2, Scene 1, misplaces the love juice in Act 2, Scene 2, and transforms Bottom's head into a donkey's head in Act 3, Scene 1. " +
+  "His profile lists interests like shape-shifting and practical jokes, which are based on real moments, such as when he tricks an old woman by turning into a stool. " +
+  "I noted that he is \"looking for someone who can keep up\" because Puck values speed, and Oberon relies on him for fast results. " +
+  "For his matches, I chose Titania because it is ironic; Puck actually ruins her marriage, yet they are both part of the fairy world. " +
+  "I also included Helena as a low-match mortal to show how Puck moves between the human and fairy kingdoms. " +
+  "Finally, I wrote the profile in a sarcastic voice because Puck is a funny but harsh character who speaks directly to the audience at the end of the play.";
 
 const MESSAGES_ESSAY =
-  "I chose Messages because most of the plot in Acts 2 and 3 happens because Oberon keeps giving Puck orders. " +
-  "The texts I wrote follow what actually occurs in the play. " +
-  "Oberon sends Puck to fetch the \"little western flower\" in 2.1, then instructs him to place the love juice on \"a sweet Athenian lady\" and the man who ignores her (around lines 2.1.260–266). " +
-  "Puck's text \"I'll put a girdle round about the earth in forty minutes\" is a direct quote from 2.1.175. " +
-  "The texts also show his major mistake in Act 3 Scene 2, where he places the juice on the wrong Athenian. " +
-  "In the play he defends himself by saying \"did not you tell me I should know the man by the Athenian garments he had on?\" (3.2.348–349). " +
-  "I ended the conversation with \"Lord, what fools these mortals be!\" because it is his most famous line (3.2.115). " +
-  "Messages also shows the power difference, since Oberon sends short orders and Puck sends longer, more playful replies. " +
-  "The Messages app fits Puck because being a messenger is exactly his job in the play.";
+  "I chose a text messaging format because most of the plot in Acts 2 and 3 happens because Oberon keeps giving Puck orders. " +
+  "The text messages I wrote follow the exact events of the play. " +
+  "Oberon sends Puck to fetch the magic flower in Act 2, Scene 1, and then instructs him to place the love juice on the Athenian man who is ignoring a lady. " +
+  "Puck's text, \"I'll put a girdle round about the earth in forty minutes,\" is a direct quote from the text. " +
+  "The messages also show his major mistake in Act 3, Scene 2, where he puts the juice on the wrong person. " +
+  "In the play, he defends his mistake by pointing out that he followed Oberon's vague description of \"Athenian garments.\" " +
+  "I ended the conversation with \"Lord, what fools these mortals be!\" because it is Puck's most famous line. " +
+  "Using a messaging app also highlights their power difference, since Oberon sends brief commands while Puck sends longer, more playful replies. " +
+  "Ultimately, this format fits Puck perfectly because being a messenger is his exact job in the play.";
 
 type Tab = "songs" | "profile" | "messages";
 
