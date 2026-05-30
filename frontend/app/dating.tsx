@@ -43,9 +43,9 @@ const PUCK: Profile = {
   location: "Athenian Wood · 0.5 mi away",
   image: PUCK_AVATAR,
   bio:
-    "Hobgoblin by trade, professional chaos-coordinator by passion. I work nights for King Oberon — running errands, brewing love-juice, swapping heads (don't ask). " +
-    "Swipe right if you can take a joke, survive a forest at night, and find a donkey-headed weaver charming. " +
-    "I'll girdle the earth in forty minutes flat, just to bring you breakfast. Mortals tolerated; fairies preferred.",
+    "Hobgoblin by trade, professional chaos-coordinator by passion. I work at night for King Oberon. My job includes running errands, making love potions, and exchanging heads (don't ask about that). " +
+    "Swipe right if you can enjoy a good joke, handle being in a forest at night, and think that a human with a donkey's head is interesting. " +
+    "\"I'll go around the whole world in just forty minutes to get you breakfast.\" Mortals tolerated; fairies preferred.",
   interests: ["Shape-shifting", "Practical Jokes", "Love Potions", "Moonlit Flights", "Mischief", "Iambic Pentameter"],
   looking: "Someone who can keep up. Short-term enchantments okay.",
   matchPercent: 99,
@@ -62,8 +62,8 @@ const MATCHES: Profile[] = [
     image:
       "https://images.pexels.com/photos/7244094/pexels-photo-7244094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     bio:
-      "Queen of the Fairies. Devoted to my changeling boy. Currently estranged from my husband (it's complicated). " +
-      "Slept with a donkey once — I'd rather not talk about it.",
+      "Queen of the Fairies. Devoted to my Indian boy. Currently unfriendly with my husband (it's complicated). " +
+      "I once slept next to a donkey — I'd prefer not to discuss it.",
     interests: ["Botany", "Diadems", "Royalty", "Lullabies"],
     looking: "Drama. Allegedly.",
     matchPercent: 97,
@@ -80,7 +80,8 @@ const MATCHES: Profile[] = [
       "https://images.unsplash.com/photo-1738276569587-f77e2cf58940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxmYW50YXN5JTIwZWxmJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc4NTE3MjUxfDA&ixlib=rb-4.1.0&q=85",
     bio:
       "Tall, hopeless romantic, chasing a man who keeps telling me to leave him alone. " +
-      "Recently the unexpected target of TWO suitors at once (your fault, I'm told). Will pay for the therapy.",
+      "Recently the unexpected target of TWO people at once (your fault, I'm told). " +
+      "You owe me a massive apology, an explanation for this disaster, and probably a very large drink.",
     interests: ["Devotion", "Long Walks", "Friendship Drama", "Self-Deprecation"],
     looking: "Demetrius. Literally just Demetrius.",
     matchPercent: 14,
