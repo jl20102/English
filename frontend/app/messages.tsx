@@ -61,6 +61,16 @@ export default function Messages() {
               <Text style={styles.timeStamp}>{m.time}</Text>
             </View>
           ))}
+
+          <View style={styles.analysis} testID="messages-analysis">
+            <View style={styles.analysisHeader}>
+              <Ionicons name="book" size={14} color="#00B0FF" />
+              <Text style={styles.analysisLabel}>Why I chose the Messages app</Text>
+            </View>
+            <Text style={styles.analysisBody}>
+              I chose Messages to dramatize the central plot driver of Acts 2 and 3: Oberon ordering Puck around. The thread reconstructs the exact sequence of commands and mistakes that throws the play into chaos — first Oberon sends Puck to fetch &ldquo;a little western flower&rdquo; (2.1), then instructs him to anoint &ldquo;a sweet Athenian lady&rdquo; and the youth who scorns her (2.1.260–266). Puck&apos;s reply &ldquo;I&apos;ll put a girdle round about the earth in forty minutes&rdquo; comes directly from 2.1.175. The texts then capture his famous error in 3.2 — anointing the wrong Athenian youth — which I show through the message &ldquo;there are TWO Athenian youths in the wood,&rdquo; mirroring his real defense &ldquo;Did not you tell me I should know the man / By the Athenian garments he had on?&rdquo; (3.2.348–349). Ending with &ldquo;Lord, what fools these mortals be!&rdquo; ties the whole chat back to Puck&apos;s most famous line (3.2.115). Using a chat interface makes the power dynamic literal: Oberon&apos;s curt one-word messages (&ldquo;Puck.&rdquo; &ldquo;PUCK.&rdquo;) versus Puck&apos;s playful, emoji-laden replies show their hierarchy and contrasting personalities. The Messages app is the perfect fit because Puck is fundamentally a messenger — his entire role in the play is being Oberon&apos;s go-between, and a phone&apos;s messaging app is the modern equivalent of that exact job.
+            </Text>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </View>
@@ -125,5 +135,35 @@ const styles = StyleSheet.create({
     fontSize: 10,
     marginTop: 3,
     marginHorizontal: 6,
+  },
+  analysis: {
+    marginTop: 26,
+    padding: 16,
+    borderRadius: 16,
+    backgroundColor: "rgba(0,176,255,0.06)",
+    borderWidth: 1,
+    borderColor: "rgba(0,176,255,0.25)",
+  },
+  analysisHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: 10,
+    paddingBottom: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(0,176,255,0.18)",
+  },
+  analysisLabel: {
+    color: "#00B0FF",
+    fontFamily: "Outfit_600SemiBold",
+    fontSize: 11,
+    letterSpacing: 1.5,
+    textTransform: "uppercase",
+  },
+  analysisBody: {
+    color: "#F4F4F6",
+    fontFamily: "Outfit_400Regular",
+    fontSize: 13,
+    lineHeight: 21,
   },
 });

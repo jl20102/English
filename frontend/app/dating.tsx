@@ -231,11 +231,23 @@ function ProfileCard({ profile, isMe }: { profile: Profile; isMe?: boolean }) {
       </View>
 
       {isMe && (
-        <Text style={styles.footerNote}>
-          {"Profile is live · "}
-          <Text style={{ color: "#FFD700" }}>{"4,201"}</Text>
-          {" fairies viewed this week"}
-        </Text>
+        <>
+          <Text style={styles.footerNote}>
+            {"Profile is live · "}
+            <Text style={{ color: "#FFD700" }}>{"4,201"}</Text>
+            {" fairies viewed this week"}
+          </Text>
+
+          <View style={styles.essayCard} testID="thought-process">
+            <View style={styles.essayHeader}>
+              <Ionicons name="book" size={14} color="#FFD700" />
+              <Text style={styles.essayLabel}>Thought Process · Dating Profile</Text>
+            </View>
+            <Text style={styles.essayBody}>
+              I built Puck&apos;s dating profile around the three traits that define him in the play: mischief, loyalty to Oberon, and his self-aware sense of humor about mortals. His bio opens by naming his job (&ldquo;hobgoblin&rdquo;), because in Act 2, Scene 1 a fairy literally identifies him by that title — &ldquo;Those that Hobgoblin call you, and sweet Puck.&rdquo; The line about running errands, brewing love potions, and exchanging heads is a direct summary of his actions across Acts 2 and 3, where he fetches the love-in-idleness flower (2.1), anoints the lovers&apos; eyes (2.2), and transforms Bottom&apos;s head into a donkey&apos;s (3.1). The promise to &ldquo;go around the whole world in just forty minutes&rdquo; is almost a direct quote from his Act 2.1 boast: &ldquo;I&apos;ll put a girdle round about the earth / In forty minutes&rdquo; — establishing his speed and pride. His interests (Shape-shifting, Practical Jokes, Love Potions, Mischief, Iambic Pentameter) each correspond to specific moments: Puck shape-shifts into a stool to trick an old woman in 2.1, brews love-juice on Oberon&apos;s orders, and speaks almost entirely in verse. I made him &ldquo;looking for someone who can keep up&rdquo; because Puck values speed and wit above all — Oberon literally calls him &ldquo;my gentle Puck&rdquo; but also relies on him for high-stakes errands. For matches, I chose Titania because Puck has the highest match percentage with her ironically — he ruined her marriage and made her fall for a donkey, but their fairy-realm status makes them culturally compatible. I gave her a &ldquo;red flag&rdquo; about being married to his boss to acknowledge the absurd power dynamic the play creates. Helena, by contrast, has a low match percentage because Puck only knows her as a target of his bungled enchantment in 3.2; their dynamic is chaos, not chemistry. Including both a fairy and a mortal match shows that Puck operates in two worlds — Oberon&apos;s court and the Athenian wood — which is exactly the structural role he plays in the comedy. The whole profile is written in his trickster voice because Puck breaks the fourth wall in the epilogue (&ldquo;If we shadows have offended&rdquo;), so he&apos;s the only character who would actually fill out a dating app sincerely. The profile&apos;s tone — flippant, charming, slightly menacing — mirrors how Shakespeare himself characterizes Puck: a &ldquo;merry wanderer of the night&rdquo; who knows he is funny.
+            </Text>
+          </View>
+        </>
       )}
     </ScrollView>
   );
@@ -464,6 +476,37 @@ const styles = StyleSheet.create({
     fontFamily: "Outfit_400Regular",
     fontSize: 12,
     marginTop: 20,
+  },
+  essayCard: {
+    marginHorizontal: 16,
+    marginTop: 22,
+    padding: 18,
+    borderRadius: 18,
+    backgroundColor: "rgba(255,215,0,0.06)",
+    borderWidth: 1,
+    borderColor: "rgba(255,215,0,0.25)",
+  },
+  essayHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: 12,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "rgba(255,215,0,0.15)",
+  },
+  essayLabel: {
+    color: "#FFD700",
+    fontFamily: "Outfit_600SemiBold",
+    fontSize: 11,
+    letterSpacing: 1.8,
+    textTransform: "uppercase",
+  },
+  essayBody: {
+    color: "#F4F4F6",
+    fontFamily: "Outfit_400Regular",
+    fontSize: 13.5,
+    lineHeight: 22,
   },
   matchTabs: {
     flexDirection: "row",

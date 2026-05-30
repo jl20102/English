@@ -21,6 +21,7 @@ type Song = {
   artist: string;
   duration: string;
   why: string;
+  commentary: string;
   playing?: boolean;
 };
 
@@ -31,6 +32,8 @@ const SONGS: Song[] = [
     artist: "Screamin' Jay Hawkins",
     duration: "2:38",
     why: "My anthem. Love-juice on the eyelids, anyone?",
+    commentary:
+      "This song is literally Puck's job description set to music. Hawkins growls \"I put a spell on you / because you're mine,\" which is exactly what Puck does to mortals on Oberon's orders. In Act 2, Scene 2, Oberon hands Puck the love-in-idleness flower and commands him to \"anoint his eyes; / But do it when the next thing he espies / May be the lady\" — magically forcing affection just like the song's possessive curse. The song's dramatic, theatrical delivery matches Puck's flair: he doesn't just enchant people, he enjoys it. Hawkins's narrator refuses to let his target escape (\"you're mine\"), and Puck's enchantments similarly trap mortals in feelings they didn't choose. The song treats love as something that can be imposed by spell, which is the entire premise of the play's middle acts. For a fairy who weaponizes desire, this is basically his theme song.",
     playing: true,
   },
   {
@@ -39,6 +42,8 @@ const SONGS: Song[] = [
     artist: "The Rolling Stones",
     duration: "6:18",
     why: "Pleased to meet you. Hope you guess my name.",
+    commentary:
+      "Mick Jagger's narrator is a charming trickster who has \"been around for a long, long year\" and quietly orchestrated every catastrophe in human history — sound familiar? Puck introduces himself the exact same way: \"I am that merry wanderer of the night,\" boasting in Act 2, Scene 1 about scaring milkmaids, souring beer, and tripping old women. The song's famous refrain \"Pleased to meet you / Hope you guess my name\" mirrors Puck's many aliases — Robin Goodfellow, Hobgoblin, sweet Puck — which the fairy in Act 2.1 lists when she recognizes him. Both figures take credit for chaos while remaining likable; neither is purely evil, just gleefully meddlesome. The song's slow-burn groove fits Puck's patient, watchful mischief — he doesn't rush, he observes, then strikes. And the line \"every cop is a criminal and all the sinners saints\" matches Puck's blurring of the lovers' identities, where the \"right\" couple becomes \"wrong\" overnight.",
   },
   {
     id: "3",
@@ -46,6 +51,8 @@ const SONGS: Song[] = [
     artist: "M83",
     duration: "4:01",
     why: "Soundtrack for stealing donkey-heads at dusk.",
+    commentary:
+      "Puck is a creature of the night — he tells Oberon \"my fairy lord, this must be done with haste, / For night's swift dragons cut the clouds full fast\" in Act 3, Scene 2. M83's shimmering, after-dark synths capture exactly that magical urgency. The song has no clear lyrics, just an atmospheric pulse, which mirrors how Puck operates: in motion, half-seen, more vibe than voice. Oberon's whole plan depends on darkness — they must reverse every spell \"before the morning star\" — and \"Midnight City\" is built around that same nocturnal energy. The saxophone solo at the end feels like a fairy darting between trees, which is essentially Puck's whole physical existence. It's a song about being awake when the rest of the world sleeps, which is Puck's job in one sentence.",
   },
   {
     id: "4",
@@ -53,6 +60,8 @@ const SONGS: Song[] = [
     artist: "Billie Eilish",
     duration: "3:14",
     why: "Duh.",
+    commentary:
+      "Eilish's whispered \"I'm the bad guy, duh\" is the most self-aware villain anthem ever recorded — and Puck is the most self-aware mischief-maker in Shakespeare. After accidentally enchanting the wrong Athenian and watching the entire forest erupt into chaos in Act 3, Scene 2, Puck doesn't apologize; he sighs \"Lord, what fools these mortals be!\" — full \"duh\" energy. The song is playful menace, not real evil, which matches the fairy's description of Puck in Act 2.1: he frightens villagers and \"misleads night-wanderers, laughing at their harm.\" He causes damage but doesn't cause death — he's chaotic, not cruel. Eilish flips between threatening and cute, just like Puck flips between \"knavish sprite\" and the gentle figure who finally restores all four lovers in Act 3.2. Both the song and the character know the audience secretly loves the troublemaker. \"Duh\" is, frankly, how Puck would describe almost anything.",
   },
   {
     id: "5",
@@ -60,6 +69,8 @@ const SONGS: Song[] = [
     artist: "Elvis Presley",
     duration: "2:35",
     why: "For when Oberon is monologuing again.",
+    commentary:
+      "Elvis demands \"a little more action\" and \"a little less fight\" — which is essentially Puck's relationship with his boss. Oberon delivers long, poetic speeches (the gorgeous \"I know a bank where the wild thyme blows\" monologue in Act 2.1 is over twenty lines), while Puck's replies are brisk and action-oriented: \"I'll put a girdle round about the earth / In forty minutes\" or simply \"I go, I go; look how I go.\" The song is impatient, restless, and pragmatic — three of Puck's defining traits. While Oberon plans, Puck moves. The track's snappy tempo also mirrors how quickly events spiral once Puck is involved: in roughly one night he transforms a man's head, mismatches every lover, and unravels the Fairy Queen's marriage. \"A little less conversation, a little more action\" is the unofficial motto of every errand Puck has ever run.",
   },
 ];
 
@@ -151,19 +162,28 @@ export default function Spotify() {
 
           {/* Song list */}
           {SONGS.map((song, idx) => (
-            <View key={song.id} style={styles.songRow} testID={`song-${song.id}`}>
-              <Text style={[styles.songIdx, song.playing && { color: "#00E676" }]}>
-                {song.playing ? <Ionicons name="volume-high" size={14} color="#00E676" /> : idx + 1}
-              </Text>
-              <View style={{ flex: 1 }}>
-                <Text style={[styles.rowTitle, song.playing && { color: "#00E676" }]} numberOfLines={1}>
-                  {song.title}
+            <View key={song.id} style={styles.songCard} testID={`song-${song.id}`}>
+              <View style={styles.songRow}>
+                <Text style={[styles.songIdx, song.playing && { color: "#00E676" }]}>
+                  {song.playing ? <Ionicons name="volume-high" size={14} color="#00E676" /> : idx + 1}
                 </Text>
-                <Text style={styles.rowArtist} numberOfLines={1}>
-                  {song.artist} · {song.why}
-                </Text>
+                <View style={{ flex: 1 }}>
+                  <Text style={[styles.rowTitle, song.playing && { color: "#00E676" }]} numberOfLines={1}>
+                    {song.title}
+                  </Text>
+                  <Text style={styles.rowArtist} numberOfLines={1}>
+                    {song.artist} · {song.why}
+                  </Text>
+                </View>
+                <Text style={styles.rowDur}>{song.duration}</Text>
               </View>
-              <Text style={styles.rowDur}>{song.duration}</Text>
+              <View style={styles.commentaryBox}>
+                <View style={styles.commentaryHeader}>
+                  <MaterialCommunityIcons name="format-quote-open" size={12} color="#FFD700" />
+                  <Text style={styles.commentaryLabel}>Why this song fits Puck</Text>
+                </View>
+                <Text style={styles.commentaryText}>{song.commentary}</Text>
+              </View>
             </View>
           ))}
         </ScrollView>
@@ -330,5 +350,41 @@ const styles = StyleSheet.create({
     color: "#A1A4BA",
     fontFamily: "Outfit_400Regular",
     fontSize: 12,
+  },
+  songCard: {
+    marginHorizontal: 14,
+    marginBottom: 14,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.03)",
+    borderWidth: 1,
+    borderColor: "rgba(255,215,0,0.1)",
+    overflow: "hidden",
+  },
+  commentaryBox: {
+    paddingHorizontal: 18,
+    paddingBottom: 16,
+    paddingTop: 4,
+  },
+  commentaryHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: 8,
+    paddingTop: 10,
+    borderTopWidth: 1,
+    borderTopColor: "rgba(255,255,255,0.06)",
+  },
+  commentaryLabel: {
+    color: "#FFD700",
+    fontFamily: "Outfit_600SemiBold",
+    fontSize: 10,
+    letterSpacing: 1.5,
+    textTransform: "uppercase",
+  },
+  commentaryText: {
+    color: "#F4F4F6",
+    fontFamily: "Outfit_400Regular",
+    fontSize: 13,
+    lineHeight: 20,
   },
 });
