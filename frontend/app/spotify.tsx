@@ -162,28 +162,19 @@ export default function Spotify() {
 
           {/* Song list */}
           {SONGS.map((song, idx) => (
-            <View key={song.id} style={styles.songCard} testID={`song-${song.id}`}>
-              <View style={styles.songRow}>
-                <Text style={[styles.songIdx, song.playing && { color: "#00E676" }]}>
-                  {song.playing ? <Ionicons name="volume-high" size={14} color="#00E676" /> : idx + 1}
+            <View key={song.id} style={styles.songRow} testID={`song-${song.id}`}>
+              <Text style={[styles.songIdx, song.playing && { color: "#00E676" }]}>
+                {song.playing ? <Ionicons name="volume-high" size={14} color="#00E676" /> : idx + 1}
+              </Text>
+              <View style={{ flex: 1 }}>
+                <Text style={[styles.rowTitle, song.playing && { color: "#00E676" }]} numberOfLines={1}>
+                  {song.title}
                 </Text>
-                <View style={{ flex: 1 }}>
-                  <Text style={[styles.rowTitle, song.playing && { color: "#00E676" }]} numberOfLines={1}>
-                    {song.title}
-                  </Text>
-                  <Text style={styles.rowArtist} numberOfLines={1}>
-                    {song.artist} · {song.why}
-                  </Text>
-                </View>
-                <Text style={styles.rowDur}>{song.duration}</Text>
+                <Text style={styles.rowArtist} numberOfLines={1}>
+                  {song.artist} · {song.why}
+                </Text>
               </View>
-              <View style={styles.commentaryBox}>
-                <View style={styles.commentaryHeader}>
-                  <MaterialCommunityIcons name="format-quote-open" size={12} color="#FFD700" />
-                  <Text style={styles.commentaryLabel}>Why this song fits Puck</Text>
-                </View>
-                <Text style={styles.commentaryText}>{song.commentary}</Text>
-              </View>
+              <Text style={styles.rowDur}>{song.duration}</Text>
             </View>
           ))}
         </ScrollView>
